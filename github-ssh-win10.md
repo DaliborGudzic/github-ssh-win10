@@ -9,7 +9,7 @@ Keys creation is done on OpenBSD using `ssh-keygen` and the `.pub` key is transf
 ### Create `.ssh` directory in Windows 10
 Create `.ssh` directory under `C:\Users\D%USERNAME%\.ssh` and store you keys in there
 ### Paste you `.pub` key in your GitHub account
-Log into your GitHub account, then go to Profile-->Settings-->SSH and GPG keys ([Link](https://github.com/settings/keys "https://github.com/settings/keys")). Click on New SSH Key. Name the key and paste the contect of .pub key. Then, click on Add SSH key. All done.
+Log into your GitHub account, then go to Profile-->Settings-->SSH and GPG keys ([https://github.com/settings/keys](https://github.com/settings/keys)). Click on New SSH Key. Name the key and paste the contect of .pub key. Then, click on Add SSH key. All done.
 ### Checking and starting the `ssh-agent` service
 Open PowerShell terminal by pressing WindowsKey + S to open searchbox and type in: powershell. Right click non it to make sure you're running as an Administrator. Then type:
 ```
