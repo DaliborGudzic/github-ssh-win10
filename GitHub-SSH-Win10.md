@@ -15,9 +15,19 @@ Open PowerShell terminal by pressing WindowsKey + S to open searchbox and type i
 ```
 Set-Service ssh-agent -StartupType Manual
 Start-Service ssh-agent
-Get-Service ssh-agent
 ```
-We set the service to manual (start only when needed), start the service and check if it is running.
+We set the service to manual (start only when needed) and start the service.
+```
+PS C:\Users\D> Get-Service ssh-agent
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  ssh-agent          OpenSSH Authentication Agent
+
+
+PS C:\Users\D>
+```
+We verify the service is running.
 ### Adding the key to ssh-add
 We add the key to ssh-add so it is active and stored in memory. In case we need to use the key, there is no need for repeated loading, password tyiping etc.
 
