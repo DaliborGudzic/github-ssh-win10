@@ -5,7 +5,29 @@ Keys creation is done on OpenBSD using `ssh-keygen` and the `.pub` key is transf
 * Create key pair
 * Transfer public key to GitHub
 * Store keys in Windows and setup of ssh-agent service (if not running)
-
+```
+d@gate:~$ ssh-keygen -t ed25519 -C "GitHub key" -f /home/d/.ssh/github.key
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /tmp/github.key
+Your public key has been saved in /tmp/github.key.pub
+The key fingerprint is:
+SHA256:mscabM4K5bv1NeMVx3/99AhpTlH5BNbXU2WYjWkxJ9c GitHub key
+The key's randomart image is:
++--[ED25519 256]--+
+|              *O@|
+|             .*XE|
+|             .o +|
+|             o o |
+|    .   S   o o .|
+|   o . +     = ..|
+|  . . B o + *   =|
+|   . * = o B . o+|
+|    +o+ . . . . o|
++----[SHA256]-----+
+d@gate:~$
+```
 ### Create `.ssh` directory in Windows 10
 Create `.ssh` directory under `C:\Users\D%USERNAME%\.ssh` and store you keys in there
 ### Paste you `.pub` key in your GitHub account
