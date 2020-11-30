@@ -79,3 +79,22 @@ Hi DaliborGudzic! You've successfully authenticated, but GitHub does not provide
 PS C:\Users\D> 
 ```
 If it is successful, we managed to do everything right. If not go cry for half an hour, then wipe the tears, take a shot of rakia and re-read the steps.
+
+Added on 30Nov2020:
+Lets make some changes:
+```
+PS C:\xampp\htdocs\projects\itbootcamp\githubProjects\github-ssh-win10> git add .\github-ssh-win10.md
+PS C:\xampp\htdocs\projects\itbootcamp\githubProjects\github-ssh-win10> git commit -m "Added output of pushing changes"
+[master 2a5dff3] First commit
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+PS C:\xampp\htdocs\projects\itbootcamp\githubProjects\github-ssh-win10> git push -u origin master
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (27/27), 4.88 KiB | 714.00 KiB/s, done.
+Total 27 (delta 7), reused 3 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), done.
+To github.com:DaliborGudzic/github-ssh-win10.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
